@@ -1,21 +1,21 @@
 body,
 html {
   margin: 0;
-  height: 100vh;
+  height: 100%;
   color: white;
 }
 
 body {
   background-color: white;
   position: relative;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .image {
   background-image: url("./assets/home/background-home-desktop.jpg");
 
   /* Full height */
-  height: 100vh;
+  height: 100%;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -24,20 +24,39 @@ body {
 }
 
 .container {
-  height: 100%;
+  /* height: 100%; */
 }
 
 .header {
-  height: 50%;
+  /* height: 50%; */
+}
+
+.menu {
+  /* position: absolute; */
+  width: 830px;
+  height: 96px;
+  /* left: 610px;
+  top: 40px; */
+
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(81.5485px);
+}
+
+.choices {
+  position: absolute;
+  width: 542px;
+  height: 19px;
+  /* left: 733px;
+  top: 79px; */
 }
 
 .body {
-  height: 50%;
-  display: flex;
+  /* height: 50%; */
+  /* display: flex; */
 }
 
 .introduction {
-  width: 50%;
+  /* width: 50%; */
 }
 
 .introductioncontainer {
@@ -94,12 +113,51 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
-  text-align: left;
   /* or 178% */
 
   color: #d0d6f9;
 }
 
+/* .hovereffect {
+  background-color: none;
+  width: 450px;
+  height: 450px;
+  border-radius: 230px;
+} */
+
+.explorebackground {
+  background-color: white;
+  width: 274px;
+  height: 274px;
+  border-radius: 140px;
+  position: absolute;
+  margin: 88px;
+  pointer-events: none;
+}
+
 .explore {
-  width: 50%;
+  position: absolute;
+  /* left: 22.63%;
+  right: 23.36%;
+  top: calc(50% - 37px / 2 + 0.5px); */
+
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  height: 37px;
+  margin-top: 118.9px;
+  margin-left: 58px;
+  /* identical to box height */
+
+  letter-spacing: 2px;
+  pointer-events: auto;
+
+  color: #0b0d17;
+}
+
+.explorebackground:hover {
+  cursor: pointer;
+  outline: 88px solid rgba(255, 255, 255, 0.1);
 }
