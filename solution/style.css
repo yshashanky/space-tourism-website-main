@@ -1,0 +1,105 @@
+body,
+html {
+  margin: 0;
+  height: 100vh;
+  color: white;
+}
+
+body {
+  background-color: white;
+  position: relative;
+  text-align: center;
+}
+
+.image {
+  background-image: url("./assets/home/background-home-desktop.jpg");
+
+  /* Full height */
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  height: 100%;
+}
+
+.header {
+  height: 50%;
+}
+
+.body {
+  height: 50%;
+  display: flex;
+}
+
+.introduction {
+  width: 50%;
+}
+
+.introductioncontainer {
+  width: 450px;
+  /* height: 382px; */
+  background-color: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.first {
+  height: 34px;
+  left: 0.11%;
+  right: 15.67%;
+  top: calc(50% - 34px / 2 - 174px);
+
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  /* identical to box height */
+
+  letter-spacing: 4.725px;
+
+  color: #d0d6f9;
+}
+
+.second {
+  /* position: absolute; */
+  height: 172px;
+  left: 0%;
+  right: 1.11%;
+  top: calc(50% - 172px / 2 - 47px);
+
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 172px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.third {
+  /* position: absolute; */
+  height: 128px;
+  left: 0.11%;
+  right: 1.22%;
+  top: calc(50% - 128px / 2 + 127px);
+
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: left;
+  /* or 178% */
+
+  color: #d0d6f9;
+}
+
+.explore {
+  width: 50%;
+}
