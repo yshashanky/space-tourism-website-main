@@ -85,6 +85,11 @@ a {
   color: #ffffff;
 }
 
+link {
+  text-decoration: none !important;
+  color: #ffffff;
+}
+
 .homepage {
   margin-right: 50px;
 }
