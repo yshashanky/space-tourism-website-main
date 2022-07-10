@@ -9,7 +9,6 @@ function App() {
           <div class="header">
             <div class="toppading"></div>
             <div class="headerimage">
-              {/* <img src={logo} className="App-logo" alt="logo" /> */}
               <img src={icon} className="" alt="icon" />
             </div>
 
