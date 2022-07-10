@@ -21,6 +21,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  image-rendering: pixelated;
 }
 
 .container {
@@ -36,14 +38,36 @@ body {
   width: 100%;
 }
 
+.headerimage {
+  background-color: #ffffff;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 30px;
+  margin-left: 55px;
+  margin-top: 24px;
+}
+
 .menu {
-  /* position: absolute; */
+  position: absolute;
   width: 830px;
   height: 96px;
   margin-left: 705px;
 
   background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(81.5485px);
+  backdrop-filter: blur(20px);
+}
+
+.line {
+  position: absolute;
+  width: 550px;
+  height: 1px;
+  margin-left: -510px;
+  margin-top: 48px;
+
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.25;
 }
 
 .choices {
