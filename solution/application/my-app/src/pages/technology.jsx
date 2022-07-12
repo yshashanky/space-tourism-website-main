@@ -1,7 +1,7 @@
 import React from "react";
 
-function technology() {
+function Technology() {
   return <div>Technology</div>;
 }
 
-export default technology;
+export default Technology;

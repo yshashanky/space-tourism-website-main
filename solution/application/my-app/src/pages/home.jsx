@@ -1,9 +1,35 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import icon from "../assets/home/Path.svg";
 
-function home() {
+function Home() {
   return (
-    <div className="image2">
+    <div className="image">
       <div className="container">
+        <div className="header">
+          <div className="toppading"></div>
+          <div className="headerimage">
+            <img src={icon} className="" alt="icon" />
+          </div>
+
+          <div className="menu">
+            <div className="line"></div>
+            <div className="choices">
+              <div className="homepage">
+                <Link to="/">00 HOME</Link>
+              </div>
+              <div className="destinationpage">
+                <Link to="/destination">01 DESTINATION</Link>
+              </div>
+              <div className="crewpage">
+                <Link to="/crew">02 CREW</Link>
+              </div>
+              <div className="technologypage">
+                <Link to="/technology">03 TECHNOLOGY</Link>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="body">
           <div className="introduction">
             <div className="introductioncontainer">
@@ -28,4 +54,4 @@ function home() {
   );
 }
 
-export default home;
+export default Home;

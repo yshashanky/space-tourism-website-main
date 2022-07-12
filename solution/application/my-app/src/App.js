@@ -1,67 +1,36 @@
-import icon from "./assets/home/Path.svg";
-import { Link, Routes, Route } from "react-router-dom";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
 import Destination from "./pages/destination";
 import Crew from "./pages/crew";
 import Technology from "./pages/technology";
 import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <div className="image">
-        <div className="container">
-          <div className="header">
-            <div className="toppading"></div>
-            <div className="headerimage">
-              <img src={icon} className="" alt="icon" />
-            </div>
+// function App() {
+//   return (
+//     <div className="App">
+//       <Home />
+//       <Routes>
+//         <Route path="/home" element={<Home />} />
+//         <Route path="/destination" element={<Destination />} />
+//         <Route path="/crew" element={<Crew />} />
+//         <Route path="/technology" element={<Technology />} />
+//       </Routes>
+//     </div>
+//   );
+// }
 
-            <div className="menu">
-              <div className="line"></div>
-              <div className="choices">
-                <div className="homepage">
-                  <Link to="/">00 HOME</Link>
-                </div>
-                <div className="destinationpage">
-                  <Link to="/destination">01 DESTINATION</Link>
-                </div>
-                <div className="crewpage">
-                  <Link to="/crew">02 CREW</Link>
-                </div>
-                <div className="technologypage">
-                  <Link to="/technology">03 TECHNOLOGY</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="body">
-            <div className="introduction">
-              <div className="introductioncontainer">
-                <div className="first">SO, YOU WANT TO TRAVEL TO</div>
-                <div className="second">SPACE</div>
-                <div className="third">
-                  Let’s face it; if you want to go to space, you might as well
-                  genuinely go to outer space and not hover kind of on the edge
-                  of it. Well sit back, and relax because we’ll give you a truly
-                  out of this world experience!
-                </div>
-              </div>
-            </div>
-            <div className="hovereffect">
-              <div className="explorebackground">
-                <div className="explore">EXPLORE</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <Routes>
-        <Route path="/destination" element={<Destination />} />
-        <Route path="/crew" element={<Crew />} />
-        <Route path="/technology" element={<Technology />} />
-      </Routes>
-    </div>
+// export default App;
+
+const App = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/destination" element={<Destination />} />
+      <Route path="/crew" element={<Crew />} />
+      <Route path="/technology" element={<Technology />} />
+    </Routes>
   );
-}
+};
 
 export default App;

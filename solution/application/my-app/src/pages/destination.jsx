@@ -1,7 +1,7 @@
 import React from "react";
 
-function destination() {
-  return <div className="App">Destination</div>;
+function Destination() {
+  return <div>Destination</div>;
 }
 
-export default destination;
+export default Destination;
