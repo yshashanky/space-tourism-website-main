@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import icon from "../assets/home/Path.svg";
+import icon from "../assets/shared/logo.svg";
 
 function Home() {
   return (
-    <div className="image">
+    <div className="image homeimage">
       <div className="container">
         <div className="header">
           <div className="toppading"></div>
@@ -16,16 +16,24 @@ function Home() {
             <div className="line"></div>
             <div className="choices">
               <div className="homepage">
-                <Link to="/">00 HOME</Link>
+                <Link to="/" className="active">
+                  00 HOME
+                </Link>
               </div>
               <div className="destinationpage">
-                <Link to="/destination">01 DESTINATION</Link>
+                <Link to="/destination" className="link">
+                  01 DESTINATION
+                </Link>
               </div>
               <div className="crewpage">
-                <Link to="/crew">02 CREW</Link>
+                <Link to="/crew" className="link">
+                  02 CREW
+                </Link>
               </div>
               <div className="technologypage">
-                <Link to="/technology">03 TECHNOLOGY</Link>
+                <Link to="/technology" className="link">
+                  03 TECHNOLOGY
+                </Link>
               </div>
             </div>
           </div>

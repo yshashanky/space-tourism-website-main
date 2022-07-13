@@ -24,11 +24,19 @@ import "./App.css";
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/destination" element={<Destination />} />
-      <Route path="/crew" element={<Crew />} />
-      <Route path="/technology" element={<Technology />} />
-      <Route path="*" element={<Home />} />
+      <Route path="/" activeClassName="activeHome" element={<Home />} />
+      <Route
+        path="/destination"
+        activeClassName="activeDestination"
+        element={<Destination />}
+      />
+      <Route path="/crew" activeClassName="activeCrew" element={<Crew />} />
+      <Route
+        path="/technology"
+        activeClassName="activeTechnology"
+        element={<Technology />}
+      />
+      <Route path="*" activeClassName="activeHome" element={<Home />} />
     </Routes>
   );
 };

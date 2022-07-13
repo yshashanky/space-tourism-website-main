@@ -2,9 +2,23 @@
   height: 100vh;
 }
 
-.image {
+.homeimage {
   background-image: url("./assets/home/background-home-desktop.jpg");
+}
 
+.destinationimage {
+  background-image: url("./assets/destination/background-destination-desktop.jpg");
+}
+
+.crewimage {
+  background-image: url("./assets/crew/background-crew-desktop.jpg");
+}
+
+.technologyimage {
+  background-image: url("./assets/technology/background-technology-desktop.jpg");
+}
+
+.image {
   /* Full height */
   height: 100vh;
 
@@ -85,46 +99,33 @@ a {
   color: #ffffff;
 }
 
-link {
+.link {
   text-decoration: none !important;
   color: #ffffff;
+}
+
+.link:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 35.5px;
+  mix-blend-mode: normal;
+}
+
+.active {
+  border-bottom: 3px solid rgba(255, 255, 255);
+  padding-bottom: 35.5px;
+  mix-blend-mode: normal;
 }
 
 .homepage {
   margin-right: 50px;
 }
 
-.homepage:hover {
-  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
-  padding-bottom: 54px;
-  mix-blend-mode: normal;
-}
-
 .destinationpage {
   margin-right: 50px;
 }
 
-.destinationpage:hover {
-  /* text-decoration: underline; */
-  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
-  padding-bottom: 54px;
-  mix-blend-mode: normal;
-}
-
 .crewpage {
   margin-right: 50px;
-}
-
-.crewpage:hover {
-  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
-  padding-bottom: 54px;
-  mix-blend-mode: normal;
-}
-
-.technologypage:hover {
-  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
-  padding-bottom: 54px;
-  mix-blend-mode: normal;
 }
 
 .body {
